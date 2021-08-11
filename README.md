@@ -4,6 +4,7 @@ Table of contents
 1. project description
 2. functionality brief
 
+
 1. Project Description
 
 The project has custom HTML, CSS and JS files and represent a landing page.
