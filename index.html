@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Landing Page</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <!-- Main CSS File Link -->
+  <link rel="stylesheet" type="text/css" href="CSS/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="images/logo.png" alt="logo" class="logo" />
+    <nav class="navigation-menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+    <button class="collapse-toggle">
+      <span class="open displayed"><i class="fa fa-bars"></i></span>
+      <span class="close"><i class="fa fa-times"></i></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="section1" class="section" data-nav="Our Mission">
+      <img src="images/img.png" alt="mission" class="icon" />
+      <h1>Our Mission</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+        dapibus.
+        Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex.
+        Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt.
+        Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue.
+        Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus.
+        Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit.
+        Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.
+        Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel
+        luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur
+        porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+    </section>
+
+    <section id="section2" class="section" data-nav="Our Services">
+      <h1>Our Services</h1>
+      <div class="services">
+        <div class="serv-item">
+          <img src="images/img1.png" alt="analytics" class="icon" />
+          <h4>Analytics</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorum illo nam suscipit quasi, aperiam sequi accusantium temporibus harum nesciunt,
+            voluptas assumenda vitae hic asperiores repellendus vel impedit, laborum veritatis nihil?</p>
+        </div>
+        <div class="serv-item">
+          <img src="images/img2.png" alt="smm" class="icon" />
+          <h4>Social Media Marketing</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorum illo nam suscipit quasi, aperiam sequi accusantium temporibus harum nesciunt,
+            voluptas assumenda vitae hic asperiores repellendus vel impedit, laborum veritatis nihil?</p>
+        </div>
+        <div class="serv-item">
+          <img src="images/img3.png" alt="digital marketing" class="icon" />
+          <h4>Digital Marketing</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorum illo nam suscipit quasi, aperiam sequi accusantium temporibus harum nesciunt,
+            voluptas assumenda vitae hic asperiores repellendus vel impedit, laborum veritatis nihil?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3" class="section" data-nav="Partners">
+      <h1>Meet our Partners</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dolorum illo nam suscipit quasi, aperiam sequi accusantium temporibus harum nesciunt,
+        voluptas assumenda vitae hic asperiores repellendus vel impedit, laborum veritatis nihil?</p>
+      <div class="partners-row">
+        <img src="images/img4.png">
+        <img src="images/img5.png">
+        <img src="images/img6.png">
+        <img src="images/img7.png">
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+        dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus
+        imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget
+        bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit
+        a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc,
+        pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in
+        tellus. Sed congue et odio sed euismod. Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
+        gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus.
+        Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis
+        non.</p>
+    </section>
+
+    <section id="section4" class="section" data-nav="Contact Us">
+      <h1>Contact Us</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dolorum illo nam suscipit quasi, aperiam sequi accusantium temporibus harum nesciunt,
+        voluptas assumenda vitae hic asperiores repellendus vel impedit, laborum veritatis nihil?</p>
+      <form action="#">
+        <input id="customerName" name="customerName" required="" type="text" placeholder="Your name.." />
+        <input id="customerLName" name="customerName" required="" type="text" placeholder="Your last name.." />
+        <input id="customerEmail" name="customerEmail" required="" type="email" placeholder="Your email.." /><br>
+        <div class="butn"><span class="noselect">Talk to specialist</span>
+          <div class="circle"></div>
+        </div>
+        <div class="butn"><span class="noselect">Schedule a demo</span>
+          <div class="circle"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+
+    <div>
+      <h6>Abount Company</h6>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+        some form,
+        by injected humour, or randomised words which don't look even slightly believable.</p>
+    </div>
+
+    <div>
+      <h6>Site Links</h6>
+      <div class="t1">
+
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+        </ul>
+
+        <ul>
+          <li>FAQ</li>
+          <li>Policies</li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- JavaScript Link-->
+  <script src="js/app.js"></script>
+   <!-- Font Awesome Link-->
+  <script src="https://use.fontawesome.com/585b432ad0.js"></script>
+</body>
+
+</html>
