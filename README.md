@@ -1,15 +1,15 @@
 # Landing Page Project
 
 Table of contents
-1. project description
-2. functionality brief
+# project description
+## functionality brief
 
 
-1. Project Description
+# Project Description
 
 The project has custom HTML, CSS and JS files and represent a landing page.
 
-2. Functionality Brief
+## Functionality Brief
 
 JS file includes the following functions:
 - Navigation is dynamically build based on the document sections in HTML body.
