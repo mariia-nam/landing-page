@@ -1,8 +1,8 @@
 # Landing Page Project
 
-Table of contents
-### project description
-### functionality brief
+### Table of contents
+- project description
+- functionality brief
 
 
 ## Project Description
