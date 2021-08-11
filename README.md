@@ -1,11 +1,11 @@
 # Landing Page Project
 
 Table of contents
-# project description
-## functionality brief
+### project description
+### functionality brief
 
 
-# Project Description
+## Project Description
 
 The project has custom HTML, CSS and JS files and represent a landing page.
 
