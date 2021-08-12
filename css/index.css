@@ -102,7 +102,7 @@ Global classes
     border-radius: 20px;
   }
   .icon {
-    width: 150px;
+    width: 15vw;
   } 
   .butn {
     background: var(--btn-background);
@@ -176,10 +176,9 @@ Global classes
 margin: 0.2rem auto;
 cursor: pointer;
 transition: color ease-in-out 0.2s;
+padding: 1rem;
   }
-  .menu-item:hover {
-    color: var(--background-color);
-  }
+ 
   .logo {
     width: 50px;
     cursor: pointer;
@@ -189,6 +188,11 @@ transition: color ease-in-out 0.2s;
   }
   .collapse-toggle {
     display: none
+  }
+  .highlighted {
+    background-color: var(--background-color);
+    border-radius: 10px;
+
   }
   /*
   ===============
@@ -264,9 +268,6 @@ footer {
     }
     .partners-row {
       grid-template-columns: 1fr 1fr;
-    }
-    .partners-row img {
-      width: 80%;
     }
     form {
       width: 100%;
