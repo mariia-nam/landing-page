@@ -34,7 +34,8 @@ const inViewport = function (element) {
   //assign top of viewport to a variable
   const viewportTop = element.getBoundingClientRect();
   return (
-    viewportTop.top >= 0
+    viewportTop.top >= 0 &&
+    viewportTop.bottom <= document.documentElement.clientHeight 
   );
 };
 
@@ -63,8 +64,9 @@ function buildNav() {
     navItem.href = '#' + section.getAttribute('id');
     //add a link inner text
     navItem.innerText = section.getAttribute('data-nav');
-    //add a class to a link
+    //add a class and id to a link
     navItem.classList.add('menu-item');
+    navItem.id = `menu-${section.id}`;
     //append it to a fragment
     navFragment.appendChild(navItem);
   }
@@ -76,15 +78,21 @@ function buildNav() {
 function activate() {
   //separate each section
   for (let section of sections) {
+    //retrieve a nav item matching the section
+    const menuItems = document.getElementsByClassName('menu-item');
+    const currentMenuItem = document.getElementById(`menu-${section.id}`);
     //add class if in viewport
-    if (inViewport(section)) {
+    if (inViewport(section)){
       section.classList.add('active');
+      currentMenuItem.classList.add('highlighted')
       // remove class if not in viewport
     } else {
       section.classList.remove('active');
+      currentMenuItem.classList.remove('highlighted')
     }
   };
 };
+
 
 // Scroll to anchor ID using scrollTO event
 function scrolling(event) {
@@ -114,6 +122,15 @@ function topScroll() {
  * Begin Events
  * 
 */
+function highlight(){
+  const menuItems = document.querySelectorAll('.menu-item');
+  for (let menuItem of menuItems)
+  menuItem.addEventListener('click', function(){
+    menuItem.classList.remove('active');
+    this.classList.add('active')
+  })
+}
+
 // Build menu 
 buildNav();
 // Scroll to section on link click
@@ -124,8 +141,7 @@ document.addEventListener('scroll', activate);
 logo.addEventListener('click', topScroll);
 //Open nav on header click
 document.querySelector('header').addEventListener('click', closeNav);
-
-
-
+// Highlight nav item when active
+highlight()
 
 
