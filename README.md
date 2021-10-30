@@ -1,4 +1,4 @@
-# Landing Page Project
+# Landing Page 
 
 ### Table of contents
 - project description
@@ -9,7 +9,7 @@
 
 ## Project Description
 
-The project has custom HTML, CSS and JS files and represent a landing page.
+The project has custom HTML, CSS and JS files and represents a landing page.
 
 ## How to run the project
 
